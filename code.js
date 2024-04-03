@@ -18,12 +18,12 @@ function divideAndConquerSum(array) {
 
 function helper(arr){
     switch(arr.length){
-        case 1:
-            return arr[0];
-            break;
-        case 2:
-            return arr[0] + arr[1];
-            break;
+        // case 1:
+        //     return arr[0];
+        //     break;
+        // case 2:
+        //     return arr[0] + arr[1];
+        //     break;
         default:
             let firstThird = Math.floor(arr.length / 3);
             let secondThird = firstThird * 2;
