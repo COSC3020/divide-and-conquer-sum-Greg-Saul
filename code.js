@@ -18,9 +18,6 @@ function divideAndConquerSum(array) {
 
 function helper(arr){
     switch(arr.length){
-        case 0:
-            return 0;
-            break
         case 1:
             return arr[0];
             break;
