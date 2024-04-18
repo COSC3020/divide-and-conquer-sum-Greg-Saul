@@ -45,3 +45,6 @@ this gives us a $\Theta$ complexity of $\Theta(n)$
 
 used this to learn about switch statements in js. in hindsight it probably would have just been easier to do regualr if/else statements even with the other constant considerations
 https://www.w3schools.com/js/js_switch.asp
+
+used this repo to help me realize that I didnt need a helper function
+https://github.com/COSC3020/divide-and-conquer-sum-bpotter8/blob/main/code.js
