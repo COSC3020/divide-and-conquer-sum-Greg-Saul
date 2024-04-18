@@ -30,14 +30,15 @@ most important part. Add your answer to this markdown file.
 ### Analysis
 
 $T(n) = 3T(n/3)$ because there are 3 recursive calls and the array is divided into 3 </br>
-in an attempt to simplify the recurrence relation, I will substitute $3T(n/3)$ into $T(n)$</br>
-in the first recursion this gives us $T(n) =3(3T(n/3/3))$  -->  T(n) =$9T(n/9)$</br>
-if we substitute it one more time for another recursive call, we get $T(n) = 3(9T(n/9/3)$  -->  T(n) = $27T(n/27)$</br>
-after this recursive call we begin to notice a pattern that shows: $T(n) = 3^i T(n/3^i)$</br>
+The adding of the numbers together takse a constant amount of time so I will use $+c$ to represent it</br>
+in an attempt to simplify the recurrence relation, I will substitute $3T(n/3) + c$ into $T(n)$</br>
+in the first recursion this gives us $T(n) =3(3T(n/3/3)) + c$  -->  T(n) =$9T(n/9) + c</br>
+if we substitute it one more time for another recursive call, we get $T(n) = 3(9T(n/9/3) + c$  -->  T(n) = $27T(n/27) + c$</br>
+after this recursive call we begin to notice a pattern that shows: $T(n) = 3^i T(n/3^i) + c$</br>
 we can let i = log<sub>3</sub>n because they both represent the number of recursions that are involved in the function </br>
-after this substitution, our function looks like T(n) = 3<sup>log<sub>3</sub>n </sup>T(n/3<sup>log<sub>3</sub>n</sup>) </br>
+after this substitution, our function looks like T(n) = 3<sup>log<sub>3</sub>n </sup>T(n/3<sup>log<sub>3</sub>n</sup>) + c </br>
 due to logarithmec properties 3<sup>log<sub>3</sub>n</sup> reduces down to just $n$ </br>
-this gives us $T(n) = nT(1)$ which can also be read as $n$ </br>
+this gives us $T(n) = nT(1) + c$ which can also be read as $n$ </br>
 this gives us a $\Theta$ complexity of $\Theta(n)$
 
 
